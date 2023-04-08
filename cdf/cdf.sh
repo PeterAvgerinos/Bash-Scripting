@@ -1,5 +1,5 @@
 #!~/bin/zsh
 
-cdf() {
-    cd $HOME && cd "$(fd -t d | fzf)"
+cdf(){ 
+    cd $HOME && cd "$(fd -t d | fzf)" && clear
 }
