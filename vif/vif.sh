@@ -1,3 +1,4 @@
 vif(){ 
-    cd $HOME && fd -t f | fzf -m | xargs -ro nvim -p
+    cd $HOME && fd -t f | fzf -m | xargs -ro nvim -p;
+    clear;
 }
