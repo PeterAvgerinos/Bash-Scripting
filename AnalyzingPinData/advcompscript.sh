@@ -15,28 +15,28 @@ command=${10}
 L2prf=${11}
 
 
-if [ $command=="blackscholes" ];
+if [ "$command" = "blackscholes" ];
 then
     prompt="~/Downloads/parsec-3.0/parsec_workspace/executables/blackscholes 1 ~/Downloads/parsec-3.0/parsec_workspace/inputs/in_64K.txt prices.txt"
-elif [ $command=="bodytrack" ];
+elif [ "$command" = "bodytrack" ];
 then
     prompt="~/Downloads/parsec-3.0/parsec_workspace/executables/bodytrack ~/Downloads/parsec-3.0/parsec_workspace/inputs/sequenceB_4 4 4 4000 5 0 1"
-elif [ $command=="canneal" ];
+elif [ "$command" = "canneal" ];
 then
     prompt="~/Downloads/parsec-3.0/parsec_workspace/executables/canneal 1 15000 2000 ~/Downloads/parsec-3.0/parsec_workspace/inputs/400000.nets 128"
-elif [ $command=="fluidanimate" ];
+elif [ "$command" = "fluidanimate" ];
 then
     prompt="~/Downloads/parsec-3.0/parsec_workspace/executables/fluidanimate 1 5 ~/Downloads/parsec-3.0/parsec_workspace/inputs/in_300K.fluid out.fluid"
-elif [ $command=="freqmine" ];
+elif [ "$command" = "freqmine" ];
 then
     prompt="~/Downloads/parsec-3.0/parsec_workspace/executables/freqmine ~/Downloads/parsec-3.0/parsec_workspace/inputs/kosarak_990k.dat 790"
-elif [ $command=="raytrace" ];
+elif [ "$command" = "raytrace" ];
 then
     prompt="~/Downloads/parsec-3.0/parsec_workspace/executables/rtview ~/Downloads/parsec-3.0/parsec_workspace/inputs/happy_buddha.obj -automove -nthreads 1 -frames 3 -res 1920 1080"
-elif [ $command=="swaptions" ];
+elif [ "$command" = "swaptions" ];
 then
     prompt="~/Downloads/parsec-3.0/parsec_workspace/executables/swaptions -ns 64 -sm 40000 -nt 1"
-elif [ $command=="streamcluster" ];
+elif [ "$command" = "streamcluster" ];
 then
     prompt="~/Downloads/parsec-3.0/parsec_workspace/executables/streamcluster 10 20 128 16384 16384 1000 none output.txt 1"
 else 
